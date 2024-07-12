@@ -1,0 +1,76 @@
+server kya hai?
+
+server ek system hai jo hume response provide karti hai on our any request.
+
+response==ans
+request==question
+
+system==>operating system hai
+
+computer ek device hai
+laptop ek device hai
+inn devices par par os installed hai linux
+terminal jo milega wo actually mai system ke saath communicate karwane wala scene hai
+
+terminal ===CLI
+I === interface
+jaha se ap interaction kar sakte ho
+
+cl===command line
+
+wahi par GUI graphic user interface
+
+webapplication === System
+1.front end  === GUI
+2.backend    === CLI
+3.database   === data(memory harddisk)
+
+agar app kal koi application banate ho to wo webapplication ke saath
+interact karne ka kya kya medium
+1. front end
+2. using backend
+
+
+what is differece between server and system?
+server bhi ek system ek aaisa system jo humesha responsible ho apke request par response dene ke liye at any temp, condition ,physical atmosphere aur usme internet access ho to wo server ban jati hai.
+
+to ek active system hi server hai
+
+what is HTTPS or http ?
+hyper text transfer protocol secure
+protocol set of rules.
+data pass hoga across the origin
+
+kisi user ne agar server se request ki hai to us par server ka interaction apne ap mai kuch status codes ki dwaya kiya jata hai
+
+200 === successful response
+300 === re-request
+400 === bad request from user side(client side front end side )
+500 === server side error backend(config, routes)
+
+json format mai request kiya hai and response json format mai diya jata hai .
+
+application programming interface(API) ke through yeh request and response handle kiya jata hai
+
+request listen ==>server
+response bhejna ka kaam ==>server
+request jaha par li jayegi ==>client side (browser ya wo tool jo request le sakti hai eg thunderclient, postman)
+response le lane ka jane==> API
+request le ane ka kaam==>API
+
+data packet ke andar dhal kar json ko bhej sakte hai agar wo packet format xml hui to use SOAP khete hai
+agar wahi stateless format hoti hai to use REST api bolte hai.
+SOAP stands for Simple Object Access Protocol
+Representational State Transfer (REST) is an architectural style that defines a set of constraints to be used for creating web services. REST API is a way of accessing web services in a simple and flexible way without having any processing.
+
+ Uniform Interface, Client-Server, Stateless, Cacheable, Layered System, Code on Demand.
+
+ SOAP uses only XML for exchanging information in its message format whereas REST is not restricted to XML and its the choice of implementer which Media-Type to use like XML, JSON, Plain-text. Moreover, REST can use SOAP protocol but SOAP cannot use REST.
+
+ On behalf of services interfaces to business logic, SOAP uses @WebService whereas REST instead of using interfaces uses URI like @Path.
+
+
+ https://www.geeksforgeeks.org/difference-between-rest-api-and-soap-api/
+ https://www.geeksforgeeks.org/introduction-of-server/
+ https://www.geeksforgeeks.org/what-are-http-status-codes/
+ https://www.geeksforgeeks.org/http-full-form/?ref=lbp
