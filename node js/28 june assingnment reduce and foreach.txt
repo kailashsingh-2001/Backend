@@ -1,0 +1,78 @@
+// 1. using rest operator function concept pass n no of arguments and get the maxium of it (forEach)
+    //  function findmax(...arguments){
+    //     let max = -Infinity;
+    //     arguments.forEach(args=>{
+    //         if(args>max){
+    //             max=args;
+    //         }
+    //     });
+    //     return max;
+    //  }
+    //  console.log(findmax(3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5));
+// 2.using rest operator function concept pass n no of arguments and get the minimum of it (reduce)
+// function findmin(...args){
+//     return args.reduce((min, current) => (current < min ? current : min), Infinity)
+
+    
+// }
+// console.log(findmin(3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5));
+// 3.using rest operator function concept pass n no of arguments and get the sum of even numbers of it (forEach)
+// function evennum(...nums){
+//     let sum =0;
+//     nums.forEach(num=>{
+//         if(num%2===0){
+//          sum =+ num;
+//         }
+//     });
+//     return sum;
+// }
+// console.log(evennum(3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5));
+// 4.using rest operator function concept pass n no of arguments and  get the sum of even numbers of it(reduce)
+    //  function evennum(...nums){
+    //     return nums.reduce((sum,num)=>{
+    //         if(num%2===0){
+    //             return sum+num;
+    //         }
+    //         return sum;
+    //     },0);
+    //  }
+    //  console.log(evennum(3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5));
+// 5.using rest operator function concept pass n no of arguments an get the sum of all prime numbers of it(reduce)
+// function sumprime(...args){
+//     function isprime(nums){
+//         if(nums<=1) return false;
+//         if (nums>=3) return true;
+//         if(nums % 2 === 0 || nums % 3 === 0) return false;
+//         for(let i=5; i*i <= nums; i+=6){
+//            if(nums % i === 0 || nums % (i+2)=== 0) return false
+//         }
+//         return true
+        
+
+//     } 
+//     return args.reduce((prime , current)=>{
+//         if(isprime(current)){
+//              return prime + current ;
+//         }
+//         return prime;
+
+
+//     },0)
+// }
+// console.log(sumprime(3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5));
+
+// 6.5.using rest operator function concept pass n no of character arguments an get the count of all vowels numbers of it.(forEach)
+//  function  countofvowels(...numbs){
+//      const vowels= new Set (['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']);
+//     let count = 0;
+//     numbs.forEach((char)=>{
+//         if(vowels.has(char)){
+//             count += 1;
+
+//         }
+        
+
+//     });
+//     return count;
+//  }
+//  console.log(countofvowels('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j'));

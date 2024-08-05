@@ -1,0 +1,477 @@
+ const userdata = [
+    {
+        "id": "1",
+        "username": "Prajjal Dhar",
+        "useremail": "prajjal.dhar@gmail.com",
+        "password": "Regex1234",
+        "firstName": "Prajjal",
+        "lastName": "Dhar",
+        "role": "admin",
+        "gender": "Male",
+        "age": 28,
+        "city": "Goa",
+        "salary": 300000,
+        "skills": ["Java", "Python"]
+      },
+      {
+        "id": "2",
+        "username": "Shakshi Karamchandani",
+        "useremail": "shakshi.karamchandani@yahoo.com",
+        "password": "shakshi123",
+        "firstName": "shakshi",
+        "lastName": "karamchandani",
+        "role": "customer",
+        "gender": "Female",
+        "age": 32,
+        "city": "New Delhi",
+        "salary": 500000,
+        "skills": ["Python", "C++", "Java", "Os"]
+      },
+      {
+        "id": "3",
+        "username": "Kasish Karamchandani",
+        "useremail": "Kasish.karamchandani@regexsoftware.com",
+        "password": "Kasish123",
+        "firstName": "Kasish",
+        "lastName": "karamchandani",
+        "role": "customer",
+        "gender": "Female",
+        "age": 28,
+        "city": "Mumbai",
+        "salary": 800000,
+        "skills": ["DBMS", "C++", "Kotlin", "Os"]
+      },
+      {
+        "id": "3",
+        "username": "Kasish Karamchandani",
+        "useremail": "Kasish.karamchandani@regexsoftware.com",
+        "password": "Kasish123",
+        "firstName": "Kasish",
+        "lastName": "karamchandani",
+        "role": "customer",
+        "gender": "Female",
+        "age": 28,
+        "city": "Assam",
+        "salary": 500000,
+        "skills": ["DBMS", "C++", "Kotlin", "Os"]
+      },
+      {
+        "id": "4",
+        "username": "Sumanth Rao",
+        "useremail": "sumanth.rao@gmail.com",
+        "password": "Sumanth123",
+        "firstName": "Sumanth",
+        "lastName": "Rao",
+        "role": "admin",
+        "gender": "Male",
+        "age": 28,
+        "city": "Mumbai",
+        "salary": 700000,
+        "skills": ["Java", "JavaScript"]
+      },
+      {
+        "id": "5",
+        "username": "Ananya Singh",
+        "useremail": "ananya.singh@yahoo.com",
+        "password": "Ananya123",
+        "firstName": "Ananya",
+        "lastName": "Singh",
+        "role": "customer",
+        "gender": "Female",
+        "age": 28,
+        "city": "Goa",
+        "salary": 600000,
+        "skills": ["Python", "C++", "HTML", "CSS"]
+      },
+      {
+        "id": "6",
+        "username": "Vikram Patel",
+        "useremail": "vikram.patel@regexsoftware.com",
+        "password": "Vikram123",
+        "firstName": "Vikram",
+        "lastName": "Patel",
+        "role": "customer",
+        "gender": "Male",
+        "age": 28,
+        "city": "Assam",
+        "salary": 900000,
+        "skills": ["Java", "C++", "SQL", "React"]
+      },
+      {
+        "id": "7",
+        "username": "Riya Sharma",
+        "useremail": "riya.sharma@gmail.com",
+        "password": "Riya123",
+        "firstName": "Riya",
+        "lastName": "Sharma",
+        "role": "admin",
+        "gender": "Female",
+        "age": 28,
+        "city": "Jaipur",
+        "salary": 450000,
+        "skills": ["Python", "JavaScript", "Node.js"]
+      },
+      {
+        "id": "8",
+        "username": "Abhishek Verma",
+        "useremail": "abhishek.verma@yahoo.com",
+        "password": "Abhishek123",
+        "firstName": "Abhishek",
+        "lastName": "Verma",
+        "role": "customer",
+        "gender": "Male",
+        "age": 28,
+        "city": "Goa",
+        "salary": 1000000,
+        "skills": ["Java", "C#", "ASP.NET", "SQL Server"]
+      },
+      {
+        "id": "9",
+        "username": "Rajesh Patel",
+        "useremail": "rajesh.patel@gmail.com",
+        "password": "Rajesh123",
+        "firstName": "Rajesh",
+        "lastName": "Patel",
+        "role": "customer",
+        "gender": "Male",
+        "age": 28,
+        "city": "Kolkata",
+        "salary": 1200000,
+        "skills": ["Python", "C++", "Django", "React"]
+      },
+      {
+        "id": "10",
+        "username": "Priya Gupta",
+        "useremail": "priya.gupta@regexsoftware.com",
+        "password": "Priya123",
+        "firstName": "Priya",
+        "lastName": "Gupta",
+        "role": "admin",
+        "gender": "Female",
+        "age": 28,
+        "city": "Goa",
+        "salary": 1800000,
+        "skills": ["Java", "Spring", "Hibernate"]
+      },
+      {
+        "id": "11",
+        "username": "Amit Singh",
+        "useremail": "amit.singh@yahoo.com",
+        "password": "Amit123",
+        "firstName": "Amit",
+        "lastName": "Singh",
+        "role": "customer",
+        "gender": "Male",
+        "age": 28,
+        "city": "Kolkata",
+        "salary": 1500000,
+        "skills": ["C++", "Python", "HTML", "CSS"]
+      },
+      {
+        "id": "12",
+        "username": "Neha Sharma",
+        "useremail": "neha.sharma@regexsoftware.com",
+        "password": "Neha123",
+        "firstName": "Neha",
+        "lastName": "Sharma",
+        "role": "customer",
+        "gender": "Female",
+        "age": 28,
+        "city": "New Delhi",
+        "salary": 900000,
+        "skills": ["Java", "JavaScript", "React", "Node.js"]
+      },
+      {
+        "id": "13",
+        "username": "Rahul Verma",
+        "useremail": "rahul.verma@yahoo.com",
+        "password": "Rahul123",
+        "firstName": "Rahul",
+        "lastName": "Verma",
+        "role": "admin",
+        "gender": "Male",
+        "age": 28,
+        "city": "New Delhi",
+        "salary": 700000,
+        "skills": ["Python", "Django", "SQL"]
+      },
+      {
+        "id": "14",
+        "username": "Sakshi Mishra",
+        "useremail": "sakshi.mishra@yahoo.com",
+        "password": "Sakshi123",
+        "firstName": "Sakshi",
+        "lastName": "Mishra",
+        "role": "customer",
+        "gender": "Female",
+        "age": 28,
+        "city": "Assam",
+        "salary": 650000,
+        "skills": ["Java", "C++", "Spring", "Hibernate"]
+      },
+      {
+        "id": "15",
+        "username": "Rahul Kumar",
+        "useremail": "rahul.kumar@gmail.com",
+        "password": "Rahul123",
+        "firstName": "Rahul",
+        "lastName": "Kumar",
+        "role": "customer",
+        "gender": "Male",
+        "age": 28,
+        "city": "Kolkata",
+        "salary": 900000,
+        "skills": ["Python", "Django", "Flask", "SQLAlchemy"]
+      },
+      {
+        "id": "16",
+        "username": "Vishal Singh",
+        "useremail": "vishal.singh@regexsoftware.com",
+        "password": "Vishal123",
+        "firstName": "Vishal",
+        "lastName": "Singh",
+        "role": "admin",
+        "gender": "Male",
+        "age": 28,
+        "city": "Jaipur",
+        "salary": 750000,
+        "skills": ["Java", "Spring", "Hibernate"]
+      },
+      {
+        "id": "17",
+        "username": "Anjali Gupta",
+        "useremail": "anjali.gupta@yahoo.com",
+        "password": "Anjali123",
+        "firstName": "Anjali",
+        "lastName": "Gupta",
+        "role": "customer",
+        "gender": "Female",
+        "age": 28,
+        "city": "Jaipur",
+        "salary": 450000,
+        "skills": ["C++", "Python", "HTML", "CSS"]
+      },
+      {
+        "id": "18",
+        "username": "Sachin Patel",
+        "useremail": "sachin.patel@regexsoftware.com",
+        "password": "Sachin123",
+        "firstName": "Sachin",
+        "lastName": "Patel",
+        "role": "customer",
+        "gender": "Male",
+        "age": 28,
+        "city": "Hyderabad",
+        "salary": 1900000,
+        "skills": ["Java", "JavaScript", "React", "Node.js"]
+      },
+      {
+        "id": "19",
+        "username": "Kritika Verma",
+        "useremail": "kritika.verma@regexsoftware.com",
+        "password": "Kritika123",
+        "firstName": "Kritika",
+        "lastName": "Verma",
+        "role": "admin",
+        "gender": "Female",
+        "age": 28,
+        "city": "Kolkata",
+        "salary": 2500000,
+        "skills": ["Python", "Django", "SQL"]
+      },
+      {
+        "id": "20",
+        "username": "Aryan Mishra",
+        "useremail": "aryan.mishra@gmail.com",
+        "password": "Aryan123",
+        "firstName": "Aryan",
+        "lastName": "Mishra",
+        "role": "customer",
+        "gender": "Male",
+        "age": 28,
+        "city": "Hyderabad",
+        "salary": 450000,
+        "skills": ["Java", "C++", "Spring", "Hibernate"]
+      }
+
+    ]
+How many documents are there in the collection?
+   
+  => console.log(userdata.length);
+       
+
+Retrieve all documents where the role is "admin".
+=> const admin=userdata.filter((user)=>
+    user.role==="admin"
+
+)
+
+console.log(admin);
+3.Find all documents where the role is "customer" and the username contains "Karamchandani".
+ => const  k = userdata.filter((user)=>user.role==="customer" && user.username.includes("Karamchandani"))
+ console.log(k)
+Retrieve the document with the username "Sumanth Rao".
+const k=userdata.filter((user)=>user.username === "Sumanth Rao")
+console.log(k)
+Find all documents where the user's first name starts with "R".
+const k= userdata.filter((user)=>user.firstName.startsWith("R"));
+console.log(k)
+Retrieve all documents where the user has the skill "Python".
+const k=userdata.filter((user)=>user.skills.includes("python"))
+console.log(k)
+Find all documents where the user has the skill "Java" and "Python".
+const k=userdata.filter((user)=>user.skills.includes("Java") && user.skills.includes("Python"));
+console.log(k)
+Retrieve all documents where the user's first name is "Aryan" or the last name is "Gupta".
+       const k=userdata.filter((user)=>user.firstName == "Aryan" || user.lastName=="Gupta");
+      console.log(k)
+Find all documents where the user has the skill "Java" but not "Python".
+const k = userdata.filter(user => 
+  user.skills.includes("Java") && !user.skills.includes("Python")
+);
+console.log(k)
+Retrieve all documents where the user's last name is "Sharma" and the role is "customer".
+const k=userdata.filter((user)=>
+user.lastName === "Sharma" && user.role ==="customer")
+console.log(k)
+Find all documents where the user has exactly three skills.
+const k = userdata.filter(user => user.skills.length === 3);
+
+console.log(k);
+Retrieve all documents where the user's first name starts with "S" and the role is "admin".
+const k=userdata.filter((user)=>user.firstName.startsWith("S") &&  user.role ==="admin")
+console.log(k);
+Find all documents where the user has the skill "Java" and the role is not "admin".
+const k = userdata.filter(user => 
+    user.skills.includes("Java") && !user.role==="admin")
+   console.log(k)
+  console.log(k)
+Retrieve all documents where the user's role is not specified.
+const k = userdata.filter(user => !user.role);
+
+console.log(k);
+Find all documents where the user has at least four skills.
+const k = userdata.filter(user => user.skills.length === 4);
+
+ console.log(k);
+Retrieve all documents where the user's role is "customer" and the user has no specified skills.
+ const k =userdata.filter((user)=>user.role==="customer"&& !user.skills)
+ console.log(k)
+Find all documents where the user's email contains "regexsoftware.com".
+const k=userdata.filter((user)=>user.useremail.includes("Regexsoftware.com"));
+console.log(k)
+Retrieve all documents where the user's email does not contain "gmail.com".
+const k=userdata.filter((user)=>user.useremail.includes("gmail.com"));
+console.log(k)
+Find all documents where the user's last name is not "Singh".
+const k=userdata.filter((user)=> !user.Singh)
+console.log(k)
+Retrieve all documents where the user's role is "admin" and the user has the skill "Java".
+const k=userdata.filter((user)=>user.role==="admin" && user.skills.includes("Java"));
+console.log(k)
+Find all documents where the user's first name is "Ananya" and the user's role is "customer".
+const k=userdata.filter((user)=>user.role==="customer" && user.firstName==="Ananya");
+console.log(k)
+Retrieve all documents where the user's role is "admin" and the user has at least one skill.
+const k=userdata.filter((user)=>user.role === "admin" && user.skills.length === 1)
+console.log(k)
+Find all documents where the user's role is "admin" and the user's first name starts with "R".
+ const k=userdata.filter((user)=>user.role ==="admin" && user.firstName.startsWith('R') )
+ console.log(k)
+Retrieve all documents where the user's role is "customer" and the user's last name is "Patel".
+const k=userdata.filter((user)=>user.role ==="customer" && user.lastName === "Patel")
+console.log(k)
+Find all documents where the user's role is "admin" and the user has the skill "Python".
+const k=userdata.filter((user)=>user.role==="admin" && user.skills.includes("Python"))
+console.log(k)
+Retrieve all documents where the user's role is "customer" and the user's last name is not "Gupta".
+const k=userdata.filter((user)=>user.role==="customer"&& !user.lastName==="Gupta") 
+console.log(k)
+Find all documents where the user's role is "admin" and the user's email ends with "@regexsoftware.com".
+const k=userdata.filter((user)=>user.role==="admin"&& !user.useremail.endsWith("@regexsoftware.com")) 
+ console.log(k)
+Retrieve all documents where the user's role is "customer" and the user has the skill "React".
+const k=userdata.filter((user)=>user.role==="customer"&& !user.skills.includes("React")) 
+console.log(k)
+Find all documents where the user's role is "customer" and the user has the skill "SQL".
+const k=userdata.filter((user)=>user.role==="customer"&& user.skills.includes("SQL"))
+console.log(k)
+Retrieve all documents where the user's role is "admin" and the user has at least three skills.
+const k=userdata.filter((user)=>user.role==="admin"&& user.skills.length===3)
+console.log(k)
+Find all documents where the user's role is "customer" and the user has the skills "Java" and "C++".
+const k=userdata.filter((user)=>user.role==="customer"&& user.skills.includes("Java","C++")) 
+console.log(k)
+Retrieve all documents where the user's role is "admin" and the user's email does not contain "gmail.com".
+const k=userdata.filter((user)=>user.role==="admin"&&  !user.useremail.includes("gmailcom")) 
+console.log(k)
+Find all documents where the user's role is "customer" and the user's last name starts with "M".
+const k=userdata.filter((user)=>user.role ==="customer" && user.lastName.startsWith('M') )
+console.log(k)
+Retrieve all documents where the user's role is "admin" and the user's first name is not "Rahul".
+const k=userdata.filter((user)=>user.role === "admin" &&  !user.firstName.includes("Rahul"))
+console.log(k)
+Find all documents where the user's role is "customer" and the user's email does not contain "gmail.com".
+const k = userdata.filter(user => 
+  user.role === 'customer' && !user.useremail.includes('gmail.com')
+);
+
+console.log(k);
+
+Retrieve all documents where the user's role is "admin" and the user has the skill "Java" but not "JavaScript".
+const k= users.filter(user => 
+  user.role === 'admin' && 
+  user.skills.includes('Java') && 
+  !user.skills.includes('JavaScript')
+);
+
+console.log(k);
+
+Find all documents where the user's role is "customer" and the user's first name is not "Ananya".
+const k=userdata.filter((user)=>user.role==="customer" && !user.firstName.includes("Ananya"))
+console.log(k)
+Retrieve all documents where the user's role is "admin" and the user's email contains "regexsoftware.com".
+const k=userdata.filter((user)=>user.role==="admin" && !user.useremail.includes("regexsoftware.com"))
+console.log(k)
+Find all documents where the user's role is "customer" and the user has the skill "HTML" but not "CSS".
+const k=userdata.filter((user)=>user.role==="customer" && user.skills.includes("HTML") && !user.skills.includes('CSS'))
+console.log(k)
+Retrieve all documents where the user's role is "admin" and the user has the skill "Java" and "JavaScript".
+const k=userdata.filter((user)=>user.role==="admin" && user.skills.includes("JAva" ,"Javascript"))
+console.log(k)
+Find the average age of users.
+
+Find all female users from Jaipur who know Python.
+const k=userdata.filter((user)=>user.gender ==="Female" && user.city==="Jaipur" && user.skills.includes("Python"))
+ console.log(k)
+Find all male users in Delhi who are above age 26
+const k=userdata.filter((user)=>user.gender ==="Male" && user.age>26 && user.city==="New Delhi")
+ console.log(k)
+Find all users who are from either New Delhi or Mumbai.
+const k=userdata.filter((user)=>user.city === "New Delhi" && "Mumbai");
+console.log(k)
+Find all users who have the same last name.
+   having problem
+Find the count of users in each city.
+having problem
+  
+
+How many users are from New Delhi?
+const k=userdata.filter((user)=> user.city === "New Delhi")
+ console.log(k)
+How many Female users are from Jaipur?
+const k=userdata.filter((user)=>user.gender ==="Female" && user.city === "Jaipur")
+console.log(k)
+How many Male users are there in Delhi who have skills Java?
+const k=userdata.filter((user)=>user.city==="New Delhi" && user.skills.includes("Java"))
+console.log(k)
+How many users are from Hyderabad having age greater than 24 and have skill Python,C++
+const k=userdata.filter((user)=>user.city ==="Hyderabad " && user.age>24 && user.skills.includes("Python","C++"))
+ console.log(k)
+How many female users are from Goa having age greater than 24 and have skill Python,C++
+const k=userdata.filter((user)=>user.gender ==="Female" && user.age>24 && user.skills.includes("Python","C++"))
+console.log(k)
+
+     
+    
+  

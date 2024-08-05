@@ -1,0 +1,39 @@
+command to install express 
+making folders=>
+1.config
+2.controllers
+3.middlewares
+4.models
+5.routes
+file.
+.env
+server.js
+==> npm init -y
+npm i express mongoose nodemon morgan dotenv color
+
+
+
+http methods==>
+{
+1.get: any information that is served by the server to the frontend .(takes two parameter,)
+2.post: any information taken form frontend by th server
+3. put: any information updated by the server to the frontend.
+4. delete: any information deleted by the server to the frontend.
+5. patch : specific information updated by the server to the frontend.
+
+
+kisi bhi informationf ko creae karna => post
+information ko update karna => put patch
+delete karna => delete
+aur read karna => get
+
+browser prespective.
+}
+ offline ==> \
+ online ==> / localhost:8000
+
+
+
+ 
+
+

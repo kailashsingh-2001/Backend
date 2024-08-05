@@ -1,0 +1,136 @@
+// 1. create an object of user as created in mongodb and you have to pass that object in function and print all its values by destructing it.
+        //  const  users=[{
+          
+        //     "id": "1",
+        //     "username": "Prajjal Dhar",
+        //     "useremail": "prajjal.dhar@gmail.com",
+        //     "password": "Regex1234",
+        //     "firstName": "Prajjal",
+        //     "role": "admin",
+        //     "gender": "Male",
+        //     "age": 28,
+        //     "city": "Goa",
+        //     "salary": 300000,
+        //     "skills": ["Java", "Python"]
+        //   }]
+
+        // function showskills(skills){
+
+        // }
+
+
+        // function printdetails({id,username,useremail,password,firstName,role,gender,age,city,salary,skills}){
+        //     console.log(`id:${id} username:${username} email:${useremail} password:${password} firstName:${firstName}  role:${role} gender:${gender} age:${age} city:${city} salary:${salary} skills:${skills}`)
+
+        //  }
+        //  printdetails(users[0])
+// 2. without destructing
+//       const users=
+//       [
+//         {
+//           "id": "1",
+//           "username": "Prajjal Dhar",
+//           "useremail": "prajjal.dhar@gmail.com",
+//           "password": "Regex1234",
+//           "firstName": "Prajjal",
+          
+//           "role": "admin",
+//           "gender": "Male",
+//           "age": 28,
+//           "city": "Goa",
+//           "salary": 300000,
+//           "skills": ["Java", "Python"],
+//           printDetails: function(){
+//             console.log(`id: ${this.id}`);
+//             console.log(`username: ${this.username}`)
+//             console.log(`Email: ${this.useremail}`);
+//             console.log(`password: ${this.password}`)
+//             console.log(`:firstname ${this.firstName}`);
+//             console.log(`role:${this.role}`);
+//             console.log(`gender:${this.gender}`);
+//             console.log(`Age: ${this.age}`);
+//             console.log(`city: ${this.city}`);
+//             console.log(`salary: ${this.salary}`);
+//             console.log(`skills:${this.skills}`)
+//           }
+//         }
+//       ];
+            
+            
+   
+
+
+
+// function Details(user) {
+//   user.printDetails();
+// }
+// Details(users[0])
+
+// 3.you have to use the mongodb user dataset to pass object in function now from that function you have to pass the skills key pass as object to another function print all its skills.using foreach method
+  //  const users=[
+  //   {
+  //               "id": "1",
+  //               "username": "Prajjal Dhar",
+  //               "useremail": "prajjal.dhar@gmail.com",
+  //               "password": "Regex1234",
+  //               "firstName": "Prajjal",
+                
+  //               "role": "admin",
+  //               "gender": "Male",
+  //               "age": 28,
+  //               "city": "Goa",
+  //               "salary": 300000,
+  //               "skills": ["Java", "Python"]
+  //             }]
+              
+  //             function showskills(user) {
+  //               user.skills.forEach(skill => {
+  //                 console.log(skill);
+  //               });
+  //             }
+              
+  //             function anotherfunction(user) {
+  //               showskills(user);
+  //             }
+              
+  //             anotherfunction(users[0]);
+                
+
+
+
+
+    
+
+// 4. you have to use the mongodb user dataset to pass object in function now from that function you have to pass the skills key pass as object to another function print all its skills using this method.
+// hint:
+
+// const users={
+//   "id": "1",
+//   "username": "Prajjal Dhar",
+//   "useremail": "prajjal.dhar@gmail.com",
+//   "password": "Regex1234",
+//   "firstName": "Prajjal",
+  
+//   "role": "admin",
+//   "gender": "Male",
+//   "age": 28,
+//   "city": "Goa",
+//   "salary": 300000,
+//   "skills": ["Java", "Python","cpp","react"]
+// }
+// const skills = ["java", "cpp", "python , "react"];
+// const [a, b, c] = skills;
+// console.log(a);
+// console.log(b);
+// console.log(c);
+// function details(skills){
+//   const [a,b,c,d]=skills;
+//   console.log(a);
+//   console.log(b);
+//   console.log(c);
+//   console.log(d);
+  
+  
+
+// }
+

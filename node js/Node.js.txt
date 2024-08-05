@@ -1,0 +1,92 @@
+Node.js
+
+
+what is node.js ?
+node.js internaly used javascript code.way at engine .it help javascript to run javascript in server.
+
+why do we use node.js?
+ major work is to make api ,
+so we can connect the same databse with web app, and mobile application.
+node is easy to understand who know javascript.
+node is super-fast for APIs
+with the Node and JavaScript you can become full stack developer.+
+
+
+javascript and node are the same?
+ javascript and node.js code syntax is same 
+if you know jacascript you can easily understand node
+but both are not exactly the same
+you can not connect javascript to db
+nde js can connect with db
+node js run on the server side 
+javascript is run on the browser
+
+
+
+why should learn?
+
+
+major topics?
+
+
+what is node.js
+how it works
+install and run
+make basic api
+use with express.js
+ui with node
+ui event
+forms
+webpages
+node js event middleware
+major package connect with db
+make major api
+api security and token api validation
+project
+ live with server
+
+
+
+what is client and server sides?
+where do  we use node(client or server side)
+how node.js use javascript
+what developer make with node.js
+
+
+first script with node
+
+script with command line
+make folder and file
+ write first code and run 
+interview questions
+
+
+
+fundamentals of node.js
+
+javascript fundamentals for node.js
+conditions,loops and array.
+the import function and variables.
+from another file.
+
+
+filter==>
+to find the specific value from array.
+
+
+
+core modules in node.js
+
+what are the core modules?
+what are global modules?
+global model example"
+nod global module with example
+
+fs,Buffer,http  
+
+
+
+
+
+
+ 
