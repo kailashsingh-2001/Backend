@@ -33,6 +33,10 @@ exports.getAllUser =async(req, res)=>{
 exports.signupdata= async(req, res)=>{
     
     const {email,password,name}=req.body
+    console.log(req.body)
+    // return
+ 
+    // const {email, password,name} = req.body
     const salt= bcrypt.genSaltSync(10);
     const hash=bcrypt.hashSync(password, salt);
     // console.log(hash);
@@ -52,7 +56,7 @@ exports.signupdata= async(req, res)=>{
     res.status(201).json(user)
 
 }
-
+  
 
 // login
 exports.login= async(req,res)=>{
@@ -63,22 +67,46 @@ exports.login= async(req,res)=>{
     }
 
     const existingUser = await User.findOne({email},)
-    console.log(`>>>>>>>>>>>existingUser>>>>>>>>>`,existingUser);
+    // console.log(`>>>>>>>>>>>existingUser>>>>>>>>>`,existingUser);
 
     if(!(existingUser)){
         return res.status(400).json({message:"User not found"})
     }
 
     const match = await bcrypt.compare(password, existingUser.password);
-    console.log(`>>>>>>>>match>>>>>>>>>>`,match);
+    // console.log(`>>>>>>>>match>>>>>>>>>>`,match);
     if(!match){
         return res.status(400).json({message:"Invalid password"})
     }
     const token = jwt.sign({id:existingUser._id}, secret
-        // , { expiresIn: '1h' }
+        // , { expiresIn: '1m' }
     );
-    console.log(`>>>>>>token>>>>>>>>>>>`,token);
+    // console.log(`>>>>>>token>>>>>>>>>>>`,token);
     
     res.json({token,existingUser})
 
 }
+
+// generate otp
+
+// exports.generateotp= async(req,res)=>{
+    // const otp=
+function  generate(){
+    // const randomnumber= Math.random*4;
+    // // return randomnumber
+    // console.log(randomnumber)
+    const jjj=(Math.random()*10000)
+
+    console.log(jjj);
+    
+}
+
+generate()
+// }
+
+
+
+
+
+
+
