@@ -1,5 +1,5 @@
 const jwt= require('jsonwebtoken');
-const secret= 'wedrfuiofdsghjklkjhmnvcxvbnmlkjytertyuiouy';
+const secret= "wedrfuiofdsghjklkjhmnvcxvbnmlkjytertyuiouy";
 const User= require('../models/User');
 
 module.exports=async(req,res,next)=>{
@@ -18,18 +18,17 @@ module.exports=async(req,res,next)=>{
      if(!token){
         return res.status(401).json({message:"no tokken kprovided"})
      }
-     const decode= jwt.verify(token, secret)
+     const decode=jwt.verify(token, secret)
      console.log( ">>>>>>>>>>>",decode);
      if(!decode){
         return res.status(401).json({message:"invalid user"})
      }
-   //   next();
+   
 
+     const {email}=decode;
 
-     const {id}=decode;
-
-     const user=await User.findOne({_id:id})
-     console.log(user);
+     const user=await User.findOne({email})
+     console.log(user);          
      if(!user){
         return res.status(401).json({message:"user no found"})
      }
@@ -37,7 +36,7 @@ module.exports=async(req,res,next)=>{
     }
     
     catch(err){
-        return  res.status(401).json({message:"error"})
+        return  console.log(err)
 
     }
      
